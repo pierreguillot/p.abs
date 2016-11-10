@@ -1,0 +1,58 @@
+#N canvas 153 319 253 216 10;
+#N canvas 0 22 450 300 header 0;
+#X text 69 12 by Pierre Guillot - 2016;
+#X obj 11 11 cnv 15 65 18 empty empty >~ 2 8 0 14 -262144 -66577 0
+;
+#X coords 0 -1 1 1 222 20 2 10 10;
+#X restore 9 7 pd header;
+#N canvas 453 247 450 300 nbx~ 0;
+#X obj 100 78 snapshot~;
+#X obj 100 56 inlet~;
+#X obj 100 100 nbx 5 14 -1e+37 1e+37 0 0 \$0-dummys \$0-dummyr empty
+0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 182 32 loadbang;
+#X obj 182 54 metro 100;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X coords 0 -1 1 1 54 14 2 100 100;
+#X restore 9 178 pd nbx~;
+#X obj 42 127 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#N canvas 453 247 450 300 nbx~ 0;
+#X obj 100 78 snapshot~;
+#X obj 100 56 inlet~;
+#X obj 100 100 nbx 5 14 -1e+37 1e+37 0 0 \$0-dummys \$0-dummyr empty
+0 -8 0 10 -262144 -1 -1 0 256;
+#X obj 182 32 loadbang;
+#X obj 182 54 metro 100;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X coords 0 -1 1 1 54 14 2 100 100;
+#X restore 119 178 pd nbx~;
+#X obj 176 127 sig~;
+#X obj 176 106 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X text 7 32 The abstraction outputs one if the input signal is superior
+to the right hand value or the other signal \, otherwise it outputs
+zero., f 37;
+#X obj 9 151 p.>~ 0;
+#X obj 9 126 sig~;
+#X obj 9 106 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 119 127 sig~;
+#X obj 119 106 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 119 151 p.>≈, f 10;
+#X connect 2 0 7 1;
+#X connect 4 0 12 1;
+#X connect 5 0 4 0;
+#X connect 7 0 1 0;
+#X connect 8 0 7 0;
+#X connect 9 0 8 0;
+#X connect 10 0 12 0;
+#X connect 11 0 10 0;
+#X connect 12 0 3 0;
