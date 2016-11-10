@@ -8,7 +8,7 @@ at a given frequency., f 44;
 #X obj 100 78 snapshot~;
 #X obj 100 56 inlet~;
 #X obj 100 100 nbx 5 14 -1e+37 1e+37 0 0 \$0-dummys \$0-dummyr empty
-0 -8 0 10 -262144 -1 -1 -0.156762 256;
+0 -8 0 10 -262144 -1 -1 -0.224983 256;
 #X obj 182 32 loadbang;
 #X obj 182 54 metro 100;
 #X connect 0 0 2 0;
@@ -19,7 +19,7 @@ at a given frequency., f 44;
 #X restore 9 110 pd nbx~;
 #N canvas 0 22 450 300 header 0;
 #X text 75 12 by Pierre Guillot - 2016;
-#X obj 11 11 cnv 15 65 18 empty empty p.rand~ 2 8 0 14 -262144 -66577
+#X obj 11 11 cnv 15 65 18 empty empty rand~ 2 8 0 14 -262144 -66577
 0;
 #X coords 0 -1 1 1 220 20 2 10 10;
 #X restore 9 7 pd header;
@@ -27,7 +27,7 @@ at a given frequency., f 44;
 #X obj 100 78 snapshot~;
 #X obj 100 56 inlet~;
 #X obj 100 100 nbx 5 14 -1e+37 1e+37 0 0 \$0-dummys \$0-dummyr empty
-0 -8 0 10 -262144 -1 -1 0.551344 256;
+0 -8 0 10 -262144 -1 -1 -0.767766 256;
 #X obj 182 32 loadbang;
 #X obj 182 54 metro 100;
 #X connect 0 0 2 0;

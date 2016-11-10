@@ -1,11 +1,11 @@
 #N canvas 268 174 386 229 10;
 #X obj 9 108 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 1 256;
+-262144 -1 -1 0 256;
 #N canvas 453 247 450 300 nbx~ 0;
 #X obj 100 78 snapshot~;
 #X obj 100 56 inlet~;
 #X obj 100 100 nbx 5 14 -1e+37 1e+37 0 0 \$0-dummys \$0-dummyr empty
-0 -8 0 10 -262144 -1 -1 8.59499e-06 256;
+0 -8 0 10 -262144 -1 -1 0 256;
 #X obj 182 32 loadbang;
 #X obj 182 54 metro 100;
 #X connect 0 0 2 0;
@@ -16,15 +16,15 @@
 #X restore 9 180 pd nbx~;
 #N canvas 0 22 450 300 header 0;
 #X text 111 12 by Pierre Guillot - 2016;
-#X obj 11 11 cnv 15 65 18 empty empty p.sphetocar~ 2 8 0 14 -262144
--66577 0;
+#X obj 11 11 cnv 15 65 18 empty empty sphetocar~ 2 8 0 14 -262144 -66577
+0;
 #X coords 0 -1 1 1 253 20 2 10 10;
 #X restore 9 7 pd header;
 #N canvas 453 247 450 300 nbx~ 0;
 #X obj 100 78 snapshot~;
 #X obj 100 56 inlet~;
 #X obj 100 100 nbx 5 14 -1e+37 1e+37 0 0 \$0-dummys \$0-dummyr empty
-0 -8 0 10 -262144 -1 -1 6.48904e-13 256;
+0 -8 0 10 -262144 -1 -1 0 256;
 #X obj 182 32 loadbang;
 #X obj 182 54 metro 100;
 #X connect 0 0 2 0;
@@ -42,7 +42,7 @@
 #X obj 100 78 snapshot~;
 #X obj 100 56 inlet~;
 #X obj 100 100 nbx 5 14 -1e+37 1e+37 0 0 \$0-dummys \$0-dummyr empty
-0 -8 0 10 -262144 -1 -1 -1 256;
+0 -8 0 10 -262144 -1 -1 0 256;
 #X obj 182 32 loadbang;
 #X obj 182 54 metro 100;
 #X connect 0 0 2 0;
@@ -52,7 +52,7 @@
 #X coords 0 -1 1 1 54 14 2 100 100;
 #X restore 132 180 pd nbx~;
 #X obj 132 108 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0.5 256;
+-262144 -1 -1 0 256;
 #X obj 132 127 sig~;
 #X text 7 32 The abstraction converts spherical coordinates to cartesian
 coordinates. The abstraction expects that the signals of the angles
