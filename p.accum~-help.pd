@@ -1,0 +1,26 @@
+#N canvas 460 354 252 223 10;
+#N canvas 0 22 450 300 header 0;
+#X text 80 12 by Pierre Guillot - 2016;
+#X obj 11 11 cnv 15 65 18 empty empty accum~ 2 8 0 14 -262144 -66577
+0;
+#X coords 0 -1 1 1 222 20 2 10 10;
+#X restore 9 7 pd header;
+#X obj 9 173 print~;
+#X obj 18 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 9 96 reset;
+#X text 51 95 <- reset the count, f 10;
+#X obj 9 131 p.accum~;
+#X text 7 32 The abstraction counts the number of samples that has
+been processed., f 36;
+#X obj 129 173 print~;
+#X obj 138 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 129 131 p.accum~ 1;
+#X text 131 75 Argument 1 resets the counter at each block size, f
+15;
+#X connect 2 0 1 0;
+#X connect 3 0 5 0;
+#X connect 5 0 1 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 0;
